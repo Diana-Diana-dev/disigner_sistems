@@ -7,3 +7,54 @@
   max-width: 1100px;
   margin: 0 auto;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  max-width: 340px;
+  background: #F6F8FA;
+  box-shadow: 0px 0px 7px #000000;
+  margin-bottom: 40px;
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+}
+
+.cardH4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  color: #52507B;
+  margin: 20px;
+}
+
+.cardText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 20px;
+}
+
+.cardBtn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  margin: 20px auto;
+  text-align: center;
+  color: #2A293E;
+  background: #FF6F61;
+  padding: 9px 23px;
+}
