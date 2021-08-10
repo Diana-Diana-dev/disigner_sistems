@@ -15,7 +15,7 @@
 			<div class="tariffPlan">
 				<!-- <div class="title"> -->
 					<div class="background">
-						<div class="backgroundName">Культовый валун</div>
+						<div class="backgroundName">Слепянская водная система: от Логойского тракта до Калиновского</div>
 						<div class="backgroundText">
 							<div class="text_1">от Минска</div>
 							<div class="text_2">25</div>
@@ -35,7 +35,7 @@
 			<div class="tariffPlan">
 				<div class="title">
 					<div class="background">
-						<div class="backgroundName">Культовый валун</div>
+						<div class="backgroundName">Гидропарк санатория «Сосновый бор»</div>
 						<div class="backgroundText">
 							<div class="text_1">от Минска</div>
 							<div class="text_2">25</div>
@@ -55,7 +55,7 @@
 			<div class="tariffPlan">
 				<div class="title">
 					<div class="background">
-						<div class="backgroundName">Культовый валун</div>
+						<div class="backgroundName">Юцковские родники</div>
 						<div class="backgroundText">
 							<div class="text_1">от Минска</div>
 							<div class="text_2">25</div>
@@ -134,6 +134,13 @@
 		</section>
 		</div>	
 	</main>
+	<script>
+		let background = document.querySelectorAll('.background');
+		for (let i = 0; i < background.length; i++){
+    if(background[i].style.height)
+    	background.style.height = '170px';
+}
+	</script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
 </body>
 </html>
