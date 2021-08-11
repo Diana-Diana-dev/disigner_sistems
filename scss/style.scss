@@ -5,28 +5,28 @@
 	display: flex;
 	font-family: Roboto;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 1rem;
 	line-height: 117.19%;
-	color: #52507B;
+	color: #667580;
 
 }
-@mixin font_h4 {
+@mixin font_h3 {
 	display: flex;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 1.55rem;
 	line-height: 117.19%;
-	color: #52507B;
+	color: #277E7D;
+
 }
 
 
 body{
-	// max-width: 1280px;
-	margin-top: 50px;
+	max-width: 1280px;
 	font-size: 16px;
-	background: #2A293E;
+	background: #2D2D2D;
 }
 *{
 	margin: 0;
@@ -38,12 +38,71 @@ body{
 	 	
 }
 
+
+.header {
+	display: flex;
+	width: 100%;
+	min-height: 140px; 
+	top: 0;
+	left: 0;
+}
+.header__body {
+	display: flex;
+	width: 100%;
+	min-height: 140px;
+}
+.header__name {
+	display: flex;
+	width: 50%;
+
+}
+.header__h1 {
+	@include font_h3;
+	color: #EDA33A;
+	margin: 0 5%;
+	align-items: center;
+}
+.header__burger {
+	flex: none;
+}
+.header__menu {
+	display: flex;
+	width: 50%;
+	padding-right: 2%; 
+}
+.header__list {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	margin-left: 0 3.75%;
+}
+.header__link {
+	display: inline-flex;
+	text-decoration: none;
+	background: #BA3F3C;
+	@include font_text;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #FFFFFF;
+	padding: 8.5px 22px;
+	
+}
+li {
+	margin-left: 7.5%;
+}
+
+
+
+
 .tariff {
 	display: flex;
 	justify-content: space-between;
 	// flex-flow: row wrap;
 	margin: 0 auto;
-	margin-bottom: 70px;
+	// margin-bottom: 70px;
 	width: 100%;
 	max-width: 1100px;
 	flex-direction: row;
@@ -55,20 +114,22 @@ body{
 	height: auto;
 	padding: 0 5px;
 	margin: 10px 2%;
-	background: #F6F8FA;
+	background: #222222;
+
 }
 
 .tariffPlan:hover {
-	background: #F6F8FA;
+	background: #222222;
 	box-shadow: 0px 0px 7px #000000;
 
 }
 .background {
   	position: relative;
   	display: block;
+  	max-width: 300px;
  	padding: 1.56%;
 	margin: 0 2%;
-	background: #2A293E;
+	background: #277E7D;
 	
 }
  .background:after {
@@ -77,7 +138,7 @@ body{
  	bottom: 0;
  	width: 0;
  	height: 0;
- 	border-bottom: 55px solid #F6F8FA;
+ 	border-bottom: 55px solid #222222;
  	box-sizing: border-box;
  	left: 50%;
  	border-left: 150px solid transparent;
@@ -90,7 +151,7 @@ body{
  	bottom: 0;
  	width: 0;
  	height: 0;
- 	border-bottom: 55px solid #F6F8FA;
+ 	border-bottom: 55px solid #222222;
  	box-sizing: border-box;
  	right: 50%;
  	border-right: 150px solid transparent;
@@ -98,7 +159,7 @@ body{
 }
 
 .backgroundName {
-	@include font_h4;
+	@include font_h3;
 	color: #FFFFFF;
 	padding-top: 20px;
 	min-height: 120px;
@@ -112,7 +173,7 @@ body{
 .text_1 {
 	@include font_text;
 	width: 59px;
-	color: #FF6F61;
+	color: #EDA33A;
 	text-align: right;
 	align-items: center;
 }
@@ -123,21 +184,26 @@ body{
 	font-size: 45px;
 	line-height: 117.19%;
 	text-align: center;
-	color: #FFFFFF;
+	color: #EDA33A;
 	margin: 0 13px;
 }
 .text_3 {
 	@include font_text;
 	color: #FFFFFF;
 	align-items: center;
+	color: #EDA33A;
+
 }
 .titleText {
 	@include font_text;
 	margin: 11px;
 	justify-content: center;
+	color: #667580;
+
 }
 .titleBorder{
-	border: 1px solid #DEDEDE;
+	border: 0.5px solid #667580;
+
 }
 .titleBtn {
 	@include font_text;
@@ -146,8 +212,8 @@ body{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background: #FF6F61;
-	color: #2A293E;
+	background: #BA3F3C;
+	color: #FFFFFF;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	margin-top: 20px;
@@ -157,20 +223,26 @@ body{
 
 
 
-
+ .h2 {
+ 	@include font_h3;
+ 	color: #EDA33A;
+ 	width: 501px;
+ 	margin: 3rem auto;
+ 	justify-content: center;
+ }
 
 
 .cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
+	align-items: stretch;
 }
 .card {
 	// max-width: 340px;
 	width: 30%;
-	max-height: 425px;
-	background: #F6F8FA;
+	max-height: 476px;
+	background: #222222;
 	box-shadow: 0px 0px 7px #000000;
 	margin-bottom: 40px;
 }
@@ -179,22 +251,35 @@ body{
 	height: auto;
 	// margin-bottom: 20px;
 }
-.cardH4 {
-	@include font_h4;
-	margin: 1.2rem;
- 
+.cardH3 {
+	@include font_h3;
+	margin: 1.25rem;
+ 	min-height: 84px;
 }
 .cardText {
 	@include font_text;
-	margin: 1.2rem;
+	margin: 1.25rem;
+	min-height: 57px;
 }
 .cardBtn {
 	@include font_text;
-	margin: 1.2rem auto;
+	margin: 1.25rem auto;
 	text-align: center;
-	color: #2A293E;
-	background: #FF6F61;
+	color: #FFFFFF;
+	background: #BA3F3C;
 	padding: 9px 23px;
 	border: none;
 }
 
+
+
+
+.h2 {}
+.sliders {
+	display: flex;
+}
+.slidersItem {}
+.slidersImg {}
+.slidersH3 {}
+.slidersText {}
+.slidersBtn {}
