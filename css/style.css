@@ -93,18 +93,13 @@ li {
 .tariff {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1100px;
-  flex-direction: row;
   align-items: stretch;
 }
 
 .tariffPlan {
-  width: 33.33%;
-  height: auto;
-  padding: 0 5px;
-  margin: 10px 2%;
+  max-width: 340px;
+  width: 30%;
+  max-height: 489px;
   background: #222222;
 }
 
@@ -131,7 +126,7 @@ li {
   border-bottom: 55px solid #222222;
   box-sizing: border-box;
   left: 50%;
-  border-left: 150px solid transparent;
+  border-left: 160px solid transparent;
 }
 
 .background:before {
@@ -143,7 +138,7 @@ li {
   border-bottom: 55px solid #222222;
   box-sizing: border-box;
   right: 50%;
-  border-right: 150px solid transparent;
+  border-right: 160px solid transparent;
 }
 
 .backgroundName {
@@ -251,8 +246,9 @@ li {
   line-height: 117.19%;
   color: #277E7D;
   color: #EDA33A;
-  width: 501px;
+  width: 673px;
   margin: 3rem auto;
+  text-align: center;
   justify-content: center;
 }
 
@@ -316,6 +312,164 @@ li {
   border: none;
 }
 
-.sliders {
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
   display: flex;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 25%;
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 70px;
+  border: none;
+}
+
+.slick-arrow.slick-prev {
+  background: url("../img/left.png") 0 0/100% no-repeat;
+  left: 20px;
+}
+
+.slick-arrow.slick-next {
+  background: url("../img/right.png") 0 0/100% no-repeat;
+  right: 15px;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  left: 0;
+}
+
+.slidersItem {
+  display: block;
+  width: 33.33%;
+  max-width: 340px;
+  max-height: 606px;
+  background: #277E7D;
+  box-shadow: 0px 0px 7px #000000;
+  min-width: 0;
+  text-align: center;
+  margin: 0 1.25rem;
+}
+
+.slidersImg {
+  max-width: 340px;
+  max-height: 349px;
+  margin-bottom: 1.25rem;
+}
+
+.slidersImg img {
+  width: 100%;
+}
+
+.slidersH3 {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.55rem;
+  line-height: 117.19%;
+  color: #277E7D;
+  color: #FFFFFF;
+  margin: 1.25rem;
+  min-height: 84px;
+}
+
+.slidersText {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  color: #EDA33A;
+  margin: 1.25rem;
+  min-height: 57px;
+}
+
+.slidersBtn {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  margin: 1.25rem auto;
+  background: #BA3F3C;
+  padding: 8.5px 12.5px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.comments {
+  width: 654px;
+  margin: 0 auto;
+}
+
+.commentBox {
+  display: flex;
+}
+
+.commentImg {
+  margin: 0 2.5rem;
+}
+
+.comment {
+  background: #222222;
+  box-shadow: 0px 0px 7px #000000;
+  margin-bottom: 50px;
+}
+
+.commentFooter {
+  display: flex;
+  max-width: 530px;
+  align-items: flex-end;
+}
+
+.commentText {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  color: #FFFFFF;
+}
+
+.commentName {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  color: #FFFFFF;
+}
+
+.commentBorder {
+  height: 16px;
+  border: 1px solid #FFFFFF;
+  margin: 0 8px;
+}
+
+.commentDate {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  color: #FFFFFF;
 }
