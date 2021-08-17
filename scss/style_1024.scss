@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');
+@mixin font_text{
+	display: flex;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 117.19%;
+	color: #667580;
+
+}
+@mixin font_h3 {
+	display: flex;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.55rem;
+	line-height: 117.19%;
+	color: #277E7D;
+
+}
+
+
+body{
+	max-width: 1024px;
+	font-size: 16px;
+	background: #2D2D2D;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	max-width: 900px;
+	margin: 0 9.7%;
+	 	
+}

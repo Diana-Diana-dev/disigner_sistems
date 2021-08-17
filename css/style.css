@@ -96,6 +96,22 @@ li {
   transition: 0.3s;
 }
 
+.cards {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.card {
+  display: block;
+  width: 30%;
+  max-height: 476px;
+  background: #222222;
+  box-shadow: 0px 0px 7px #000000;
+  margin-bottom: 40px;
+}
+
 .tariff {
   display: flex;
   justify-content: space-between;
@@ -103,9 +119,11 @@ li {
 }
 
 .tariffPlan {
-  width: 30%;
+  display: block;
+  width: 28%;
   height: 489px;
   background: #222222;
+  padding: 1.8%;
 }
 
 .tariffPlan:hover {
@@ -117,8 +135,6 @@ li {
   position: relative;
   max-width: 300px;
   height: 260px;
-  padding: 1.56%;
-  margin: 0 2%;
   background: #277E7D;
 }
 
@@ -151,7 +167,7 @@ li {
   border-bottom: 55px solid #222222;
   box-sizing: border-box;
   left: 50%;
-  border-left: 160px solid transparent;
+  border-left: 150px solid transparent;
 }
 
 .background:before {
@@ -163,7 +179,7 @@ li {
   border-bottom: 55px solid #222222;
   box-sizing: border-box;
   right: 50%;
-  border-right: 160px solid transparent;
+  border-right: 150px solid transparent;
 }
 
 .backgroundName {
@@ -183,7 +199,8 @@ li {
 
 .backgroundText {
   display: flex;
-  padding: 0 61px 44px 47px;
+  justify-content: center;
+  padding: 0 61px 0px 47px;
 }
 
 .text_1 {
@@ -603,4 +620,80 @@ li {
 .footerLink:hover {
   transform: translate(5px);
   transition: 0.3s;
+}
+
+.cardItem {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.cardItemImg {
+  max-width: 436px;
+  max-height: 550px;
+}
+
+.cardItemImg img {
+  width: 100%;
+}
+
+.cardItemDescription {
+  padding: 30px;
+}
+
+.cardItemDescription_1 {
+  display: flex;
+}
+
+.cardItemDescriptionText {
+  max-width: 274px;
+  margin: 0 30px 30px 0;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  color: #667580;
+}
+
+.cardItemDescriptionTextAfter {
+  max-width: 304px;
+  height: 14px;
+  background: linear-gradient(90deg, #277E7D 50%, rgba(39, 126, 125, 0) 73.82%);
+  margin: 30px 0;
+}
+
+.cardItemDescriptionTariffs {
+  max-width: 300px;
+  margin-left: 30px;
+}
+
+.cardItemDescriptionTariff {
+  max-width: 300px;
+  background: #277E7D;
+}
+
+.cardItemDescriptionTariffAfter {
+  height: 0;
+  width: 0;
+  left: 0;
+  bottom: -55px;
+  border-top: 55px solid #277E7D;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.cardItemDescription_2Text {
+  max-width: 604px;
+  margin-bottom: 30px;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  color: #667580;
 }

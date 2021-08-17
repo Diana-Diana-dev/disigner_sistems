@@ -98,7 +98,21 @@ li {
 	transform: scale(1.1);
 	transition: .3s;
 }
+.cards {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
 
+.card {
+	display: block;
+	width: 30%;
+	max-height: 476px;
+	background: #222222;
+	box-shadow: 0px 0px 7px #000000;
+	margin-bottom: 40px;
+}
 
 .tariff {
 	display: flex;
@@ -108,12 +122,13 @@ li {
 	align-items: stretch;
 }
 .tariffPlan {
-	
+	display: block;
 	// width: 340px;
- 	width: 30%;
+ 	width: 28%;
  	height: 489px;
 	background: #222222;
-
+	padding: 1.8%;
+	// margin: 0 1.8%;
 }
 
 
@@ -123,15 +138,24 @@ li {
 
 }
 .background {
-  	position: relative;
+  	 position: relative;
   	// display: block;
   	max-width: 300px;
   	height: 260px;
- 	padding: 1.56%;
-	margin: 0 2%;
 	background: #277E7D;
 	
 }
+// .backgroundAfter{
+	
+// 	height: 0;  
+// 	width: 0;   
+// 	left: 0;  
+// 	bottom: -55px; 
+// 	border-top: 55px solid #277E7D; 
+// 	border-left: 150px solid transparent; 
+// 	border-right: 150px solid transparent;
+
+// }
 .d24 {	
 height: 165px;  
 width: 500px;  
@@ -159,7 +183,7 @@ border-right: 250px solid transparent;
  	border-bottom: 55px solid #222222;
  	box-sizing: border-box;
  	left: 50%;
- 	border-left: 160px solid transparent;
+ 	border-left: 150px solid transparent;
  	// margin-right: 0 2%;
  	// padding-right: 2%;
 }
@@ -174,7 +198,7 @@ border-right: 250px solid transparent;
  	border-bottom: 55px solid #222222;
  	box-sizing: border-box;
  	right: 50%;
- 	border-right: 160px solid transparent;
+ 	border-right: 150px solid transparent;
  	// margin-left: 0 2%;
  	// padding-left: 2%;
 }
@@ -189,7 +213,8 @@ border-right: 250px solid transparent;
 }
 .backgroundText {
 	display: flex;
-	padding: 0 61px 44px 47px;
+	justify-content: center;
+	padding: 0 61px 0px 47px;
 }
 .text_1 {
 	@include font_text;
@@ -679,4 +704,81 @@ border-right: 250px solid transparent;
 .footerLink:hover {
 	transform: translate(5px);
 	transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cardItem {
+	display: flex;
+	width: 100%;
+	height: auto;
+}
+.cardItemImg {
+	max-width: 436px;
+	max-height: 550px;
+}
+.cardItemImg img {
+	width: 100%;
+}
+.cardItemDescription {
+	padding: 30px;
+}
+.cardItemDescription_1 {
+	display: flex;
+}
+.cardItemDescriptionText {
+	max-width: 274px;
+	margin: 0 30px 30px 0;
+	@include font_text;
+	color: #667580;
+}
+.cardItemDescriptionTextAfter {
+	max-width: 304px;
+	height: 14px;
+	background: linear-gradient(90deg, #277E7D 50%, rgba(39, 126, 125, 0) 73.82%);
+	margin: 30px 0;
+
+}
+.cardItemDescriptionTariffs {
+	max-width: 300px;
+	margin-left: 30px;
+
+}
+.cardItemDescriptionTariff {
+	max-width: 300px;
+	// min-height: 205px;
+	background: #277E7D;
+
+}
+.cardItemDescriptionTariffAfter{
+	
+	height: 0;  
+	width: 0;   
+	left: 0;  
+	bottom: -55px; 
+	border-top: 55px solid #277E7D; 
+	border-left: 150px solid transparent; 
+	border-right: 150px solid transparent;
+
+}
+
+
+.cardItemDescription_2 {
+	// padding-top: 55px;
+}
+.cardItemDescription_2Text {
+	max-width: 604px;
+	margin-bottom: 30px;
+	@include font_text;
+	color: #667580;
 }
