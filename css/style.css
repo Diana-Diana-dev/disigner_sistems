@@ -93,6 +93,7 @@ li {
 
 .header__link:hover {
   transform: scale(1.1);
+  background: #DD322E;
   transition: 0.3s;
 }
 
@@ -182,6 +183,28 @@ li {
   border-right: 150px solid transparent;
 }
 
+@media screen and (max-width: 1100px) {
+  .background:after {
+    content: "";
+    border-left: 140px solid transparent;
+  }
+
+  .background:before {
+    content: "";
+    border-right: 140px solid transparent;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .background:after {
+    content: "";
+    border-left: 130px solid transparent;
+  }
+
+  .background:before {
+    content: "";
+    border-right: 130px solid transparent;
+  }
+}
 .backgroundName {
   display: flex;
   font-family: Roboto;
@@ -251,6 +274,7 @@ li {
   color: #667580;
   margin: 11px;
   justify-content: center;
+  text-align: center;
   color: #667580;
   transition: 0.3s;
 }
@@ -288,12 +312,13 @@ li {
 }
 
 .titleBtn:hover {
-  background: orange;
+  background: #DD322E;
   transition: 0.2s;
 }
 
 .titleBtn:active {
   background: #BA3F3C;
+  transition: 0.1s;
 }
 
 .h2 {
@@ -374,40 +399,13 @@ li {
 }
 
 .cardBtn:hover {
-  background: orange;
-  transition: 0.2s;
+  background: #DD322E;
+  transition: 0.3s;
 }
 
 .cardBtn:active {
   background: #BA3F3C;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-track {
-  display: flex;
-}
-
-.slick-arrow {
-  position: absolute;
-  top: 25%;
-  z-index: 10;
-  font-size: 0;
-  width: 50px;
-  height: 70px;
-  border: none;
-}
-
-.slick-arrow.slick-prev {
-  background: url("../img/left.png") 0 0/100% no-repeat;
-  left: 20px;
-}
-
-.slick-arrow.slick-next {
-  background: url("../img/right.png") 0 0/100% no-repeat;
-  right: 15px;
+  transition: 0.1s;
 }
 
 .slider {
@@ -482,12 +480,13 @@ li {
 }
 
 .slidersBtn:hover {
-  background: orange;
+  background: #DD322E;
   transition: 0.2s;
 }
 
 .slidersBtn:active {
   background: #BA3F3C;
+  transition: 0.2s;
 }
 
 .comments {
@@ -627,4 +626,189 @@ li {
 .footerLink:hover {
   transform: translate(5px);
   transition: 0.3s;
+}
+
+.cardItem {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  background: #222222;
+  border-radius: 0px;
+}
+
+.cardItemImg {
+  max-width: 436px;
+  max-height: 550px;
+}
+
+.cardItemImg img {
+  width: 100%;
+}
+
+.cardItemDescription {
+  padding: 30px;
+}
+
+.cardItemDescription_1 {
+  display: flex;
+}
+
+.cardItemDescriptionText {
+  max-width: 274px;
+  margin: 0 30px 30px 0;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  color: #667580;
+}
+
+.cardItemDescriptionTextAfter {
+  max-width: 304px;
+  height: 14px;
+  background: linear-gradient(90deg, #277E7D 50%, rgba(39, 126, 125, 0) 73.82%);
+  margin: 30px 0;
+}
+
+.cardItemDescriptionTariffs {
+  max-width: 300px;
+  margin-left: 30px;
+}
+
+.cardItemDescriptionTariff {
+  max-width: 300px;
+  background: #277E7D;
+}
+
+.cardItemDescriptionTariffAfter {
+  height: 0;
+  width: 0;
+  left: 0;
+  bottom: -55px;
+  border-top: 55px solid #277E7D;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.backgroundName {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.55rem;
+  line-height: 117.19%;
+  color: #277E7D;
+  color: #FFFFFF;
+  padding-top: 20px;
+  min-height: 120px;
+  margin: 0 20px 20px 20px;
+  text-align: center;
+}
+
+.backgroundText {
+  display: flex;
+  justify-content: center;
+  padding: 0 61px 0px 47px;
+}
+
+.text_1 {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  width: 59px;
+  color: #EDA33A;
+  text-align: right;
+  align-items: center;
+}
+
+.text_2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 117.19%;
+  text-align: center;
+  color: #EDA33A;
+  margin: 0 13px;
+}
+
+.text_3 {
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  color: #FFFFFF;
+  align-items: center;
+  color: #EDA33A;
+}
+
+.cardItemDescription_2Text {
+  max-width: 604px;
+  margin-bottom: 30px;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 117.19%;
+  color: #667580;
+  color: #667580;
+}
+
+.slider_wrap {
+  width: 100%;
+  position: relative;
+  min-width: 0;
+  left: 0;
+  margin-bottom: 40px;
+}
+
+.banner_slider {
+  max-width: 1280px;
+  max-height: 657px;
+  left: 0;
+}
+
+.banner_slider img {
+  width: 100%;
+}
+
+.thumbnail_slider_area {
+  position: absolute;
+  left: 0;
+  bottom: 23px;
+  width: 100%;
+  z-index: 10;
+}
+
+.thumbnail_slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  min-width: 0;
+  left: 0;
+}
+
+.col {
+  max-width: 239px;
+  max-height: 128px;
+  margin: 0 10px;
+  min-width: 0;
+  text-align: center;
+}
+
+.col img {
+  width: 100%;
+  opacity: 0.6;
 }
